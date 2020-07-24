@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@responsive {
+  .bg-primary-gradient {
+    background: linear-gradient(135deg, #1a2f5c 0%, #0d6c9f 50.52%, #00a7e1 100%);
+  }
+  .bg-secondary-gradient {
+    background: linear-gradient(135deg, #00A7E1 0%, #6DC9B1 100%);
+  }
+}
+
+/* Tailwind: Min-Height - Work in progress! */
+.min-h-62 {
+  min-height: 14rem;
+}
+
+.min-h-128 {
+  min-height: 32rem;
+}
+
+.text-indent-hidden {
+  text-indent: -100000px;
+}
