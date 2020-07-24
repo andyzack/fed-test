@@ -1,12 +1,12 @@
 module.exports = {
-  purge: false, /* MANUALLY CONFIGURED PURGECSS IN POSTCSS.CONFIG */
+  purge: false /* MANUALLY CONFIGURED PURGECSS IN POSTCSS.CONFIG */,
   theme: {
     container: {
       center: true,
     },
     fontFamily: {
       sans: [
-        'Roboto',
+        '"Open Sans"',
         '"Helvetica Neue"',
         'Arial',
         'sans-serif'
