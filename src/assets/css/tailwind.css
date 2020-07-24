@@ -6,10 +6,10 @@
 
 @responsive {
   .bg-primary-gradient {
-    background: linear-gradient(135deg, #1a2f5c 0%, #0d6c9f 50.52%, #00a7e1 100%);
+    background: linear-gradient(135deg, #00A7E1 0%, #6DC9B1 100%);
   }
   .bg-secondary-gradient {
-    background: linear-gradient(135deg, #00A7E1 0%, #6DC9B1 100%);
+    background: linear-gradient(135deg, #1a2f5c 0%, #0d6c9f 50.52%, #00a7e1 100%);
   }
 }
 
