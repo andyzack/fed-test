@@ -1,61 +1,22 @@
-## OS and Utility Stuff ##
-
-#==================#
-#     OS Files     #
-#==================#
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-*[Tt]humbs.db
-*.Trashes
-
-
-#===================================#
-#           Package Files           #
-#===================================#
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.tgz
-*.bak
-
-
-#===================================#
-#         Development Files         #
-#===================================#
-*.idea
-*.sublime-*
-*.todo
-notes.md
-gruntfile.js
-_notes/
-.sass-cache
-*.css.map
-*.js.map
-
-
-#==================#
-#    Log files     #
-#==================#
-*.log
-logs
-error_log
-access_log
-npm-debug.log*
-
-
-#===================================#
-#       Config. and npm Files       #
-#===================================#
 node_modules
-*node_modules*
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
