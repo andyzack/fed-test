@@ -1,10 +1,13 @@
 # Coding Test
 
+[Click here to preview the output](http://www.andrewaz.com/fed-test/).
+
 ## Challenge
 
 To build card design and output the content using JSON data [see more details below](#user-content-carter-fed-test)
 
 CARD UI: [View design](https://raw.githubusercontent.com/andyzack/fed-test/master/src/assets/CardGrid-design.png)
+
 JSON API: [View data](http://prototype.carter-dev.net/fed-test/items.json)
 
 ## Approach
@@ -39,7 +42,7 @@ npm run build
 npm run lint
 ```
 
-## Tools Installed
+## Tools
 
 >[Node.js](https://nodejs.org/en/download/)
 
@@ -52,10 +55,6 @@ npm run lint
 >[SVG loader](https://vue-svg-loader.js.org/)
 
 >[gh-pages](https://cli.vuejs.org/guide/deployment.html)
-
-
-### Quick Preview
-See [sample link](http://www.andrewaz.com/fed-test/).
 
 
 ### Customize configuration
