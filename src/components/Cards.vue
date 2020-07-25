@@ -8,7 +8,7 @@
       :class="[
         featured == 'true'
           ? 'bg-primary-gradient text-white border-secondary-color leading-10 hover:bg-complimentary-color'
-          : 'bg-white text-gray-700 text-lg border-gray-100 hover:border-complimentary-color hover:text-secondary-color leading-12',
+          : 'bg-white text-gray-700 text-lg border-gray-100 hover:border-secondary-color hover:text-secondary-color leading-12',
         { active: hover }
       ]"
       @mouseover="hover = true"
@@ -26,21 +26,24 @@
         </p>
         <div
           v-if="documentSize"
-          class="carter-icon-arrow absolute left-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
+          class="carter-icon-arrow flex align-middle absolute left-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
         >
-          <i class="block text-secondary-color font-normal relative p-8">
+          <i class="block relative p-8">
             <IconDocument
               fill="#cfcfcf"
               class="fill-secondary-color w-8 h-auto"
             />
           </i>
+          <span class="text-base text-gray-600 -ml-6 py-8 leading-8">
+            PDF ({{ documentSize }})
+          </span>
         </div>
         <div
           v-if="documentSize"
-          class="carter-icon-arrow absolute right-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
+          class="carter-icon-arrow absolute right-0 bottom-0 text-3xl"
         >
           <i
-            class="block text-secondary-color font-normal relative p-8"
+            class="block relative p-8"
             :class="[
               featured == 'true'
                 ? 'text-white bg-primary-color'
@@ -55,10 +58,10 @@
         </div>
         <div
           v-else
-          class="carter-icon-arrow absolute right-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
+          class="carter-icon-arrow absolute right-0 bottom-0 text-3xl"
         >
           <i
-            class="block text-secondary-color font-normal relative p-8"
+            class="block relative p-8"
             :class="[
               featured == 'true'
                 ? 'text-white bg-secondary-color'

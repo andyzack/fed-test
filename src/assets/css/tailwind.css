@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 @responsive {
   .bg-primary-gradient {
@@ -11,17 +11,16 @@
   .bg-secondary-gradient {
     background: linear-gradient(135deg, #1a2f5c 0%, #0d6c9f 50.52%, #00a7e1 100%);
   }
+  .bg-primary-gradient.active i {
+    background: #1e9890;
+  }
+  .bg-white.active i svg, .bg-white.active span {
+    fill: #1e9890;
+    color: #1e9890;
+  }
 }
 
 /* Tailwind: Min-Height - Work in progress! */
-.min-h-62 {
-  min-height: 14rem;
-}
-
 .min-h-128 {
   min-height: 32rem;
-}
-
-.text-indent-hidden {
-  text-indent: -100000px;
 }
