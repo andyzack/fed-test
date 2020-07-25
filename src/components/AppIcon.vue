@@ -33,7 +33,7 @@ import IconArrowDown from "../assets/icons/arrow-down.svg?inline";
 import IconArrowRight from "../assets/icons/arrow-right.svg?inline";
 
 export default {
-  name: "iIcons",
+  name: "AppIcon",
   components: {
     IconDocument,
     IconArrowDown,

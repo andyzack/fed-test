@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- HEADER COMPONENT -->
-    <Header title="Products" />
+    <AppHeader title="Products" />
 
     <!-- BODY CONTAINER -->
     <div class="container">
@@ -9,7 +9,7 @@
         <!-- CARDS OUTPUT RESULTS //START -->
         <div class="flex flex-wrap -mx-2 lg:-mx-4 px-0 lg:px-3">
           <!-- CARDS COMPONENT -->
-          <Cards
+          <AppCard
             v-for="(product, key) in products"
             :key="key"
             :id="parseInt(product.id)"
@@ -28,14 +28,14 @@
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Cards from "./components/Cards.vue";
+import AppHeader from "./components/AppHeader.vue";
+import AppCard from "./components/AppCard.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
-    Cards
+    AppHeader,
+    AppCard
   },
   data() {
     return {

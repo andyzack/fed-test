@@ -6,7 +6,7 @@
 
 To build card design and output the content using JSON data [see more details below](#user-content-carter-fed-test)
 
-CARD UI: [View design](https://raw.githubusercontent.com/andyzack/fed-test/master/src/assets/CardGrid-design.png)
+CARD UI: [View design](https://raw.githubusercontent.com/CarterDigital/fed-test/master/CardGrid.png)
 
 JSON API: [View data](http://prototype.carter-dev.net/fed-test/items.json)
 
