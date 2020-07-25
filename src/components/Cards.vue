@@ -29,7 +29,10 @@
           class="flex align-middle absolute left-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
         >
           <Icons type="document" :featured="featured" />
-          <span class="text-base text-gray-600 -ml-6 py-8 leading-8">
+
+          <span
+            class="text-base text-gray-600 -ml-2 lg:-ml-4 md:-ml-4 py-4 lg:py-6 md:py-6 leading-8"
+          >
             PDF ({{ documentSize }})
           </span>
         </div>
