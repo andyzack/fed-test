@@ -16,7 +16,7 @@ module.exports = {
           "#00a4c7" /* Primary Text Color, Header Background Top Color */,
         "secondary-color":
           "#0e766f" /* Secondary Text Color, Ribbon Background Top Color */,
-        "complimentaty-color":
+        "complimentary-color":
           "#00ad87" /* Complimentaty Text Color, Ribbon Background Top Color */,
         "near-gray": {
           100: "#E0E1DD",
