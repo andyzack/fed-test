@@ -14,7 +14,7 @@
       @mouseover="hover = true"
       @mouseleave="hover = false"
     >
-      <div class="px-6 py-4 lg:px-10 md:px-10">
+      <div class="px-6 pt-4 lg:pt-10 pb-16 md:px-10">
         <p
           class="font-bold"
           :class="[featured == 'true' ? 'text-4xl' : 'text-2xl']"

@@ -1,6 +1,6 @@
 <template>
   <i
-    class="block relative p-8"
+    class="block relative p-4 lg:p-6 md:p-6"
     :class="[
       featured == 'true'
         ? 'text-white bg-secondary-color'
