@@ -26,53 +26,18 @@
         </p>
         <div
           v-if="documentSize"
-          class="carter-icon-arrow flex align-middle absolute left-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
+          class="flex align-middle absolute left-0 bottom-0 text-secondary-color hover:text-primary-color text-3xl"
         >
-          <i class="block relative p-8">
-            <IconDocument
-              fill="#cfcfcf"
-              class="fill-secondary-color w-8 h-auto"
-            />
-          </i>
+          <Icons type="document" :featured="featured" />
           <span class="text-base text-gray-600 -ml-6 py-8 leading-8">
             PDF ({{ documentSize }})
           </span>
         </div>
-        <div
-          v-if="documentSize"
-          class="carter-icon-arrow absolute right-0 bottom-0 text-3xl"
-        >
-          <i
-            class="block relative p-8"
-            :class="[
-              featured == 'true'
-                ? 'text-white bg-primary-color'
-                : 'text-secondary-color'
-            ]"
-          >
-            <IconArrowDown
-              :fill="[featured == 'true' ? '#ffffff' : '#00ad87']"
-              class="fill-secondary-color w-8 h-auto"
-            />
-          </i>
+        <div v-if="documentSize" class="absolute right-0 bottom-0 text-3xl">
+          <Icons type="arrowDown" :featured="featured" />
         </div>
-        <div
-          v-else
-          class="carter-icon-arrow absolute right-0 bottom-0 text-3xl"
-        >
-          <i
-            class="block relative p-8"
-            :class="[
-              featured == 'true'
-                ? 'text-white bg-secondary-color'
-                : 'text-secondary-color'
-            ]"
-          >
-            <IconArrowRight
-              :fill="[featured == 'true' ? '#ffffff' : '#00ad87']"
-              class="fill-secondary-color w-8 h-auto"
-            />
-          </i>
+        <div v-else class="absolute right-0 bottom-0 text-3xl">
+          <Icons type="arrowRight" :featured="featured" />
         </div>
       </div>
       <a
@@ -85,16 +50,12 @@
 </template>
 
 <script>
-import IconDocument from "../assets/icons/document.svg?inline";
-import IconArrowDown from "../assets/icons/arrow-down.svg?inline";
-import IconArrowRight from "../assets/icons/arrow-right.svg?inline";
+import Icons from "./Icons.vue";
 
 export default {
   name: "Cards",
   components: {
-    IconDocument,
-    IconArrowDown,
-    IconArrowRight
+    Icons
   },
   data() {
     return {
@@ -108,7 +69,8 @@ export default {
     category: String,
     link: String,
     featured: String,
-    documentSize: String
+    documentSize: String,
+    type: String
   }
 };
 </script>

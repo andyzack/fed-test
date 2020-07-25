@@ -5,11 +5,8 @@ module.exports = {
       center: true
     },
     fontFamily: {
-      sans: ['"Open Sans"', '"Helvetica Neue"', "Arial", "sans-serif"]
+      sans: ['"Open Sans"', "sans-serif", '"Helvetica Neue"', "Arial"]
     },
-    fill: theme => ({
-      red: theme("colors.red.500")
-    }),
     extend: {
       colors: {
         "primary-color":
@@ -17,16 +14,7 @@ module.exports = {
         "secondary-color":
           "#0e766f" /* Secondary Text Color, Ribbon Background Top Color */,
         "complimentary-color":
-          "#00ad87" /* Complimentaty Text Color, Ribbon Background Top Color */,
-        "near-gray": {
-          100: "#E0E1DD",
-          700: "#636569"
-        },
-        "near-white": "#F9F8F8"
-      },
-      fontSize: {
-        "3xl-2": "2rem",
-        "5xl-2": "2.8125rem"
+          "#00ad87" /* Complimentaty Text Color, Ribbon Background Top Color */
       }
     }
   },

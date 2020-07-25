@@ -6,7 +6,7 @@
     <!-- BODY CONTAINER -->
     <div class="container">
       <div class="px-2 py-4 mb-10">
-        <!-- SEARCHAVAILABILITY //START -->
+        <!-- CARDS OUTPUT RESULTS //START -->
         <div class="flex flex-wrap -mx-4 px-3 lg:px-0">
           <!-- CARDS COMPONENT -->
           <Cards
@@ -21,6 +21,7 @@
             :documentSize="product.documentSize"
           />
         </div>
+        <!-- CARDS OUTPUT RESULTS //END -->
       </div>
     </div>
   </div>
